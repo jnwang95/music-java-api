@@ -1,8 +1,5 @@
-<div align=center>
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jnwang95&repo=music-java-api&show_icons=true&theme=radical)](https://github.com/jnwang95/github-readme-stats)
-</div>
-
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=jnwang95&show_icons=true&theme=radical)](https://github.com/jnwang95/github-readme-stats)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jnwang95&repo=music-java-api&show_icons=true&theme=radical)](https://github.com/jnwang95/music-java-api)
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=jnwang95&show_icons=true&theme=radical)](https://github.com/jnwang95/music-java-api)
 
 
 # music-java-api
