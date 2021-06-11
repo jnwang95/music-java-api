@@ -11,4 +11,4 @@
 Jdk 16 、 Maven 、SpringBoot 、 Lombok
 
 ## 技术选型
-SpringBoot 、Hotool
+SpringBoot 、Hutool
