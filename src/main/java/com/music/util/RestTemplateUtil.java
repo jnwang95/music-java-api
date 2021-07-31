@@ -110,4 +110,11 @@ public class RestTemplateUtil {
         }
         return list;
     }
+
+    /**
+     * get请求
+     */
+    public static ResponseEntity<String> get(String url, Map<String, String> cookies, RestTemplate restTemplate) {
+       return restTemplate.getForEntity(url, String.class);
+    }
 }

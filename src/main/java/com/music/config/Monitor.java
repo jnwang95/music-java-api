@@ -21,5 +21,14 @@ public class Monitor extends WebMvcConfigurationSupport {
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(musicHandlerInterceptor).addPathPatterns("/music/**");
     }
-
+    /**
+     * 放行static静态文件
+     * @param registry 注册器
+     */
+    @Override
+    protected void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/**")
+                .addResourceLocations("classpath:/resource/","classpath:/static/");
+        super.addResourceHandlers(registry);
+    }
 }

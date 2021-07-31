@@ -65,11 +65,14 @@ public class BaseServiceImpl implements BaseService {
             String[] encrypt = CryptoUtil.weapiEncrypt(object.toString());
             return RestTemplateUtil.postWeApi(encrypt[0],
                     encrypt[1],
-                    baseModule.getUrl().replaceAll("api",baseModule.getOptionsUrl()) +"?csrf_token=",
+                    baseModule.getUrl().replaceAll("/api","/" + baseModule.getType()) +"?csrf_token=",
                     cookies,
                     restTemplate);
         }
 
+        if (baseModule instanceof BaseModuleGetType) {
+            return RestTemplateUtil.get(baseModule.getUrl(),cookies,restTemplate);
+        }
         return RestTemplateUtil.post(object, baseModule.getUrl(),cookies,restTemplate);
     }
 }
